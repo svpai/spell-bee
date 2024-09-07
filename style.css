@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.letters-container {
+    display: none; /* Hide the letters container as it's no longer needed */
+}
+
+.words-container {
+    display: flex;
+    flex-direction: column; /* Ensure words are stacked vertically */
+    align-items: center;
+    margin: 10px 0;
+}
+
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.word-letter, .blank-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    user-select: none;
+    background-color: white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+.blank-input {
+    border-bottom: 2px solid #000;
+}
+
+.checkmark, .wrongmark {
+    font-size: 20px;
+    margin-left: 10px;
+}
